@@ -1,13 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+// App.js
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './assets/App.css'
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Contacts from './pages/Contacts';
+import About from './pages/About';
 
-function App() {
+const App = () => {
   return (
-     <Navigation></Navigation>
-    
-  )
-}
+    <Router>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;

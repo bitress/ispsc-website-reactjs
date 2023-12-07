@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ispsc_logo from './../assets/logo.png'
 import Clock from './Clock';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
+  const [isNavToggled, setIsNavToggled] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavToggled((prevIsNavToggled) => !prevIsNavToggled);
+  };
+
     return (
-        <div>
+        <>
         <header className="masthead">
           <div className="header-masthead">
             <div className="row">
@@ -31,32 +38,21 @@ function Navigation() {
             </div>
           </div>
           <nav>
-            <div id="hamburger" className="hamburger-menu">
+          <div id="hamburger" className={`hamburger-menu ${isNavToggled ? 'active' : ''}`} onClick={toggleNav}>
               <div className="bar"></div>
               <div className="bar"></div>
               <div className="bar"></div>
             </div>
-            <ul className="nav-link">
-              <li><a href="index.html">Home</a></li>
-              <li>About ISPSC
-                <ul className="sub-menu">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="mission-and-vision.html">Mission & Vision</a></li>
-                  <li><a href="hymn.html">Hymn</a></li>
-                </ul>
-              </li>
-              <li><a href="course-offered.html">What We Offer</a></li>
-              <li>Be an ISPSCian
-                <ul className="sub-menu">
-                  <li><a href="admission.html">Admission Requirements</a></li>
-                  <li><a href="procedure-for-enrollment.html">Procedure for Enrollment</a></li>
-                </ul>
-              </li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
+            <ul className={`nav-link ${isNavToggled ? 'navbar-toggled' : ''}`}>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contacts">Contacts</Link></li>
+          </ul>
+
           </nav>
         </header>
-        </div>
+        </>
+        
       );
     
 }
