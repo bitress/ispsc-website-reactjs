@@ -5,6 +5,8 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import About from './pages/About';
+import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -15,7 +17,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+
         </Routes>
+        <Footer></Footer>
       </div>
     </Router>
   );
