@@ -48,7 +48,6 @@ function Navigation() {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contacts">Contacts</Link></li>
           </ul>
-
           </nav>
         </header>
         </>

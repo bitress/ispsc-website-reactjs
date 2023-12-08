@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
       }, []); 
   return (
     <div>
-      <h2>About ISPSC</h2>
+      <h2>About the Developers</h2>
       <p>This is the About page content.</p>
     </div>
   )
