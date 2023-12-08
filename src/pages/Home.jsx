@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import HomeSection from '../components/HomeSection';
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
           <div className="section">
             <div className="card">
               <h3>Announcements</h3>
-              <ul>
+              <ul id='announcements'>
                 <li>December 01, 2023: 21st Birthday of the Developer</li>
               </ul>
             </div>
@@ -29,12 +29,12 @@ function Home() {
               <h3>Quick Links</h3>
               <ul>
                 <li>
-                  <a target="_blank" href="https://www.ispsctagudin.info/student-portal/">
+                  <a target="_blank" href="https://www.ispsctagudin.info/student-portal/" rel="noreferrer">
                     <i className="far fa-browser"></i> Student Portal
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.ispsctagudin.info/library/">
+                  <a target="_blank" href="https://www.ispsctagudin.info/library/" rel="noreferrer">
                     <i className="far fa-books"></i> eLibrary
                   </a>
                 </li>

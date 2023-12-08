@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import ispsc_logo from './../assets/logo.png'
 import Clock from './Clock';
 import { Link } from 'react-router-dom';
