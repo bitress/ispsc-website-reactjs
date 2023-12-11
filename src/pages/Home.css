@@ -15,3 +15,61 @@
 .about_dev  {
     text-align: center;
 }
+.col-md-12.content-page {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blog-post .post-image img {
+    width: 100%;
+}
+
+.blog-post .post-image p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.blog-post .post-image a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-post .post-title h2 {
+    color: #333333;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.blog-post .post-title h3 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 50px 0px 15px;
+}
+
+.blog-post .post-info {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: #8c8c8c;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #848484;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    font-family: "Merriweather", sans-serif;
+}
+

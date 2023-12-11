@@ -10,11 +10,9 @@
   --primary: #007BFF;
   --dark-maroon: #700000;
   --maroon: #800000;
-  --yellow: #FFD700;
-  --green: #198754;
-  /*#008000;*/
-  --dark-green: #156b41;
-  /*#006600;*/
+  --yellow: black;
+  --green: #002D62;
+  --dark-green: #00308F;
 }
 
 * {
@@ -73,6 +71,19 @@ nav a {
   color: var(--yellow);
 
 
+}
+
+header .header {
+  padding: 20px;
+  text-align: center;
+
+}
+
+.header-title {
+}
+
+.header-subtitle {
+  color: black;
 }
 
 .active {
@@ -380,8 +391,7 @@ input:checked+.slide-container .nav label {
 .card h3 {
   font-family: 'Century Gothic';
   font-size: 16px;
-  background-color: green;
-  color: white;
+  background-color: var(--primary);
   padding: 8px;
   margin: 0;
   text-align: center;
@@ -390,7 +400,6 @@ input:checked+.slide-container .nav label {
 
 #announcements li {
   font-size: 14px;
-  border-bottom: 1px solid var(---green);
   margin-right: 50px;
   color: var(--dark-green);
 }
@@ -563,9 +572,7 @@ input:checked+.slide-container .nav label {
 
 .copyright {
   font-family: 'Century Gothic';
-  border-top: 3px solid var(--dark-green);
   text-align: center;
-  padding-top: 20px;
   font-size: 18px;
   color: white;
 }

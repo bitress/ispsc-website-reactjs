@@ -1,13 +1,14 @@
 import { useEffect } from 'react';
 import Section from '../components/Section';
 import './Home.css'
+import Ads from '../components/Ads';
 const About = () => {
 
     useEffect(() => {
-        document.title = 'About | ISPSC Tagudin';
+      document.title = 'About | Bitress';
     
         return () => {
-          document.title = 'Home | ISPSC Tagudin';
+          document.title = 'Home | Bitress';
         };
       }, []); 
   return (
@@ -18,7 +19,7 @@ const About = () => {
             <Section></Section>
         </div>
 
-        <div className="col-9">
+        <div className="col-6">
             <div className=' mission_vision_card'>
               <div className='about_dev'>
               <h3>About the Developer</h3>
@@ -30,6 +31,9 @@ const About = () => {
             
             </div>
 
+        </div>
+        <div className="col-3">
+            <Ads></Ads>
         </div>
       </div>
     </div>

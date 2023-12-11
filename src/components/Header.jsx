@@ -1,32 +1,13 @@
-import ispsc_logo from './../assets/logo.png'
-import Clock from './Clock';
+
 function Header(){
     return(
         <>
-          <div className="header-masthead">
-            <div className="row">
-              <div className="col-8">
-                <div className="logo">
-                  <div className="image-logo">
-                    <img src={ispsc_logo} className="logo" alt="ISPSC Logo" />
-                  </div>
-                  <div className="text-logo">
-                    <div id="agency-heading">Republic of the Philippines</div>
-                    <div id="agency-name">Ilocos Sur Polytechnic State College</div>
-                    <div id="agency-tagline">Tagudin Campus | Tagudin, Ilocos Sur</div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-4">
-                <div id="pst-container">
-                  <div>Philippine Standard Time:</div>
-                  <div id="pst-time">
-                    <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}><Clock></Clock></a>
-                  </div>
-                </div>
-              </div>
+          <header className="bg-primary text-white text-center py-5">
+            <div className="container header">
+              <h1 className="header-title">Bitress&apos; Blog</h1>
+              <p className="header-subtitle">Welcome to my what should I say official? like a famous one? lol! This is my blog, where I put here my feelings that I can&apos;t say</p>
             </div>
-          </div>
+          </header>
         </>
     )
 }
